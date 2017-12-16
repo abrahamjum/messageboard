@@ -1,0 +1,10 @@
+<div class="col-md-10 col-md-offset-1">
+  <% @messages.each do |message| %>
+    <div class="col-md-4">
+      <div class="message">
+        <h2 class="message-title center"><%= message.title %></h2>
+        <p class="center msg-btn"><%= link_to "View Message", message_path(message), class: "btn-custom" %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
